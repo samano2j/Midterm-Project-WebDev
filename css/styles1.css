@@ -1,0 +1,380 @@
+@media screen and (max-width: 500px) {
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0f0f0f;
+    padding: 2vh 0;
+}
+
+header img {
+    height: auto;
+    width: 8vw;
+}
+
+#search {
+    order: 1;
+}
+
+#cart {
+    order: 4;
+}
+
+#profile {
+    order: 3;
+}
+
+#location {
+    order: 2;
+}
+
+#logo {
+    padding: 0 5vw;
+    height: auto;
+    width: 90vw;
+}
+
+header input {
+    margin-top: 10vh;
+    left: 0;
+    padding: 0 10vw;
+    height: 2.5vh;
+    width: 70vw;
+    position: fixed;
+    border-radius: 20px;
+    border: #0f0f0f 5px;
+    border-style: solid;
+    opacity: 0;
+}
+
+.showsearch:hover #searchinput{
+    opacity: 1;
+}
+
+nav {
+    background-color: #0f0f0f;
+    font-family: 'Kanit';
+    color: #bfbfbf;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Kanit';
+    font-size: 1em;
+}
+
+
+a:active, a:visited, a:link {
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #404040;
+}
+
+#search:hover {
+    content: url("/images/icon/search-2.png");
+}
+
+#cart:hover {
+    content: url("/images/icon/cart-2.png");
+}
+
+#profile:hover {
+    content: url("/images/icon/profile-2.png");
+}
+
+#location:hover {
+    content: url("/images/icon/location-2.png");
+}
+
+.dropdown-content {
+    left:0%;
+    color: black;
+    position: fixed;
+    background-color: #bfbfbf;
+    height: 12vh;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    font-family: 'Kanit';
+    font-size: 0.6em;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-flow: column;
+    padding: 1vh 3vh;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+section {
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Kanit';
+    color: #0d5494;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+section p {
+    font-family: 'Lato';
+    font-size: 1em;
+    padding-top: 1vh;
+    width: 100vw;
+    margin-top: 3vh;
+}
+
+section button {
+    background-color:#0d5494;
+    color: white;
+    font-size: 0.2em;
+    height: 2vh;
+    font-weight: bold;
+}
+
+section button:focus {
+    background-color: white;
+    color: #0d5494;
+}
+
+.first {
+    background-image: url(/images/shonen.png);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.first h1 {
+    font-family: 'Kanit';
+    color: rgb(2, 255, 116);
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+.content h1 {
+    margin: 0;
+    height: 1vh;
+    width: 100vw;
+}
+
+.content.img{
+    background-size: cover;
+    background-position: center;
+    height: 15vh;
+    width: 25vw;
+}
+
+.series {
+    height:20vh;
+    width: 100vw;
+}
+
+.series .content.img {
+    height:10vh;
+    background-size: 100%;
+    width: 30vw;
+    background-repeat: no-repeat;
+}
+
+
+.series {
+    background-color: #d04c25;
+}
+
+.manga {
+    background-color: #bbe9df;
+}
+
+.figures {
+    background-color: #f7b9e1;
+}
+
+.games {
+    background-color: #64ca94;
+
+}
+
+.clothing {
+    background-color: #abdbe9;
+}
+
+
+
+#series1{
+    background-image: url(/images/logo/bleach.png);
+}
+
+#series2{
+    background-image: url(/images/logo/dbz.png);
+}
+
+#series3{
+    background-image: url(/images/logo/naruto.png);
+}
+
+#series4{
+    background-image: url(/images/logo/onepiece.png);
+}
+
+#series5{
+    background-image: url(/images/logo/opm.png);
+}
+
+#manga1{ 
+    background-image: url(/images/manga/slime.jpg);
+}
+
+#manga2{ 
+    background-image: url(/images/manga/onepiece.png);
+}
+
+#manga3{ 
+    background-image: url(/images/manga/opm.jpg);
+}
+
+#manga1:hover { 
+    background-image: url(/images/manga/slime-2.png);
+}
+
+#manga2:hover { 
+    background-image: url(/images/manga/onepiece-2.png);
+}
+
+#manga3:hover { 
+    background-image: url(/images/manga/opm-2.jpg);
+}
+
+#figure1{ 
+    background-image: url(/images/figures/fig1.png);
+}
+
+#figure2{ 
+    background-image: url(/images/figures/fig2.png);
+}
+
+#figure3{ 
+    background-image: url(/images/figures/fig3.png);
+}
+
+#figure1:hover { 
+    background-image: url(/images/figures/fig1-2.png);
+}
+
+#figure2:hover { 
+    background-image: url(/images/figures/fig2-2.png);
+}
+
+#figure3:hover { 
+    background-image: url(/images/figures/fig3-2.png);
+}
+
+#game1{ 
+    background-image: url(/images/games/dbz.jpg);
+}
+
+#game2{ 
+    background-image: url(/images/games/demon.jpg);
+}
+
+#game3{ 
+    background-image: url(/images/games/persona.jpg);
+}
+
+#game1:hover { 
+    background-image: url(/images/games/game1.gif);
+    width: 50vw;
+
+}
+
+#game2:hover { 
+    background-image: url(/images/games/game2.gif);
+    width: 50vw;
+
+}
+
+#game3:hover { 
+    background-image: url(/images/games/game3.gif);
+    width: 50vw;
+
+}
+
+#cloth1{ 
+    background-image: url(/images/cloth/bleach.png);
+}
+
+#cloth2{ 
+    background-image: url(/images/cloth/naruto.png);
+}
+
+#cloth3{ 
+    background-image: url(/images/cloth/op.png);
+}
+
+#cloth1:hover { 
+    background-image: url(/images/cloth/bleach-2.png);
+}
+
+#cloth2:hover { 
+    background-image: url(/images/cloth/naruto-2.png);
+}
+
+#cloth3:hover { 
+    background-image: url(/images/cloth/op-2.png);
+}
+
+footer {
+    background-color:#235e6b;
+    height: 15vh;
+    color: white;
+    font-family: 'Kanit';
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1vh 0;
+}
+
+
+footer ul {
+    list-style: none;
+}
+
+footer a, p {
+    font-size: 0.7em;
+}
+
+footer img {
+    height: 2vh;
+    width: 5vw;
+    padding: 0 1vw;
+}
+
+}

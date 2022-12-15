@@ -1,0 +1,415 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.top-container {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+header {
+    background-color: #0f0f0f;
+    color: white;
+    
+    height: 9vh;
+    padding: 2.5vh 0;
+}
+
+header img {
+    height: 6vh;
+    width: 3vw;
+    padding: 0px 1.5vw;
+}
+
+#search {
+    float: left;
+}
+
+input {
+    height: 5vh;
+    width: 20vw;
+    border-radius: 15px;
+}
+
+#logo {
+    transform: translateY(-1vh);
+    height: 10vh;
+    width: 16vw;
+    position: fixed;
+    left: 40%;
+}
+
+.icon {
+    float: right;
+}
+
+nav {
+    background-color: #0f0f0f;
+    font-family: 'Kanit';
+    height: 7vh;
+    color: #bfbfbf;
+    padding: 0 10vw;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Kanit';
+    font-size: 1.5em;
+}
+
+a:active, a:visited, a:link {
+    color: #bfbfbf;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #404040;
+}
+
+#search:hover {
+    content: url("/images/icon/search-2.png");
+}
+
+#cart:hover {
+    content: url("/images/icon/cart-2.png");
+}
+
+#profile:hover {
+    content: url("/images/icon/profile-2.png");
+}
+
+#location:hover {
+    content: url("/images/icon/location-2.png");
+}
+
+.dropdown-content {
+    left:0%;
+    color: black;
+    position: fixed;
+    background-color: #bfbfbf;
+    height: 35vh;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(-150%);
+}
+
+.dropdown-content ul {
+    list-style: none;
+    font-family: 'Kanit';
+    font-size: 1.1em;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-auto-flow: column;
+    padding: 3vh 10vh;
+}
+
+
+.dropdown:hover .dropdown-content{
+    animation: drop 0.1s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateY(-10%);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section {
+    height: 59vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 10vh 0;
+    font-family: 'Kanit';
+    color: #0d5494;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+section p {
+    font-family: 'Lato';
+    font-size: 0.8em;
+}
+
+section button {
+    background-color:#0d5494;
+    color: white;
+    font-size: 0.5em;
+    font-weight: bold;
+    padding: 3vh;
+    transition: all 0.2s;
+}
+
+section button:hover {
+    background-color: white;
+    color: #0d5494;
+}
+
+.first {
+    background-image: url(/images/shonen.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 21vh;
+    height: 59vh;
+    text-align: center;
+    font-size: 5em;
+}
+
+.first h1 {
+    font-family: 'Kanit';
+    color: rgb(2, 255, 116);
+    margin-top: -1vh;
+}
+
+.content {
+    text-align: center;
+    width: 20vw;
+}
+
+.content.img{
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+}
+
+.series {
+    height: 25vh;
+}
+
+.series .content.img {
+    background-size: 100%;
+    width: 18vw;
+    background-repeat: no-repeat;
+}
+
+.series .content.img:hover {
+    padding: 2%;
+    width: 25vw;
+}
+
+#series1{
+    background-image: url(/images/logo/bleach.png);
+    transition: all 0.1s;
+}
+
+#series2{
+    background-image: url(/images/logo/dbz.png);
+    transition: all 0.1s;
+}
+
+#series3{
+    background-image: url(/images/logo/naruto.png);
+    transition: all 0.1s;
+}
+
+#series4{
+    background-image: url(/images/logo/onepiece.png);
+    transition: all 0.1s;
+}
+
+#series5{
+    background-image: url(/images/logo/opm.png);
+    transition: all 0.1s;
+}
+
+#manga1{ 
+    background-image: url(/images/manga/slime.jpg);
+}
+
+#manga2{ 
+    background-image: url(/images/manga/onepiece.png);
+}
+
+#manga3{ 
+    background-image: url(/images/manga/opm.jpg);
+}
+
+#manga1:hover { 
+    background-image: url(/images/manga/slime-2.png);
+}
+
+#manga2:hover { 
+    background-image: url(/images/manga/onepiece-2.png);
+}
+
+#manga3:hover { 
+    background-image: url(/images/manga/opm-2.jpg);
+}
+
+#figure1{ 
+    background-image: url(/images/figures/fig1.png);
+}
+
+#figure2{ 
+    background-image: url(/images/figures/fig2.png);
+}
+
+#figure3{ 
+    background-image: url(/images/figures/fig3.png);
+}
+
+#figure1:hover { 
+    background-image: url(/images/figures/fig1-2.png);
+}
+
+#figure2:hover { 
+    background-image: url(/images/figures/fig2-2.png);
+}
+
+#figure3:hover { 
+    background-image: url(/images/figures/fig3-2.png);
+}
+
+#game1{ 
+    background-image: url(/images/games/dbz.jpg);
+}
+
+#game2{ 
+    background-image: url(/images/games/demon.jpg);
+}
+
+#game3{ 
+    background-image: url(/images/games/persona.jpg);
+}
+
+#game1:hover { 
+    background-image: url(/images/games/game1.gif);
+    width: 100vw;
+
+}
+
+#game2:hover { 
+    background-image: url(/images/games/game2.gif);
+    width: 100vw;
+
+}
+
+#game3:hover { 
+    background-image: url(/images/games/game3.gif);
+    width: 100vw;
+
+}
+
+#cloth1{ 
+    background-image: url(/images/cloth/bleach.png);
+}
+
+#cloth2{ 
+    background-image: url(/images/cloth/naruto.png);
+}
+
+#cloth3{ 
+    background-image: url(/images/cloth/op.png);
+}
+
+#cloth1:hover { 
+    background-image: url(/images/cloth/bleach-2.png);
+}
+
+#cloth2:hover { 
+    background-image: url(/images/cloth/naruto-2.png);
+}
+
+#cloth3:hover { 
+    background-image: url(/images/cloth/op-2.png);
+}
+
+.series {
+    background-color: #d04c25;
+}
+
+.manga {
+    background-color: #bbe9df;
+}
+
+.figures {
+    background-color: #f7b9e1;
+}
+
+.games {
+    background-color: #64ca94;
+
+}
+
+.clothing {
+    background-color: #abdbe9;
+}
+
+footer {
+    background-color:#235e6b;
+    height: 40vh;
+    color: white;
+    font-family: 'Kanit';
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 3vh 0 3vh 10vw;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a, p {
+    font-size: 2.5em;
+}
+
+
+footer img {
+    height: 10vh;
+    width: 5vw;
+    padding: 0 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
